@@ -1,7 +1,6 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 //import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import * as dat from 'dat.gui';
 
 const renderer = new THREE.WebGLRenderer();
 
@@ -44,7 +43,8 @@ scene.add(sphere);
 sphere.position.set(-10, 10, 0);
 
 const gui = new dat.GUI();
-const options = {
+
+const options =  {
     sphereColor: '#ffea00'
 };
 
