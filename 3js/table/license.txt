@@ -1,0 +1,11 @@
+Model Information:
+* title:	TABLE TENNIS MODEL B1-30
+* source:	https://sketchfab.com/3d-models/table-tennis-model-b1-30-d579fe0363f54cecb9e0da1370e412a9
+* author:	ACT-R (https://sketchfab.com/ACT-R)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "TABLE TENNIS MODEL B1-30" (https://sketchfab.com/3d-models/table-tennis-model-b1-30-d579fe0363f54cecb9e0da1370e412a9) by ACT-R (https://sketchfab.com/ACT-R) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
