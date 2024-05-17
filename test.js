@@ -59,6 +59,15 @@ const spotLight1 = new THREE.SpotLight(0xFFFFFF, 100000);
 const spotLight2 = new THREE.SpotLight(0xFFFFFF, 100000);
 const spotLight3 = new THREE.SpotLight(0xFFFFFF, 100000);
 const spotLight4 = new THREE.SpotLight(0xFFFFFF, 100000);
+const spotLight1Helper = new THREE.SpotLightHelper(spotLight1);
+const spotLight2Helper = new THREE.SpotLightHelper(spotLight2);
+const spotLight3Helper = new THREE.SpotLightHelper(spotLight3);
+const spotLight4Helper = new THREE.SpotLightHelper(spotLight4);
+spotLight1Helper.visible = true;
+spotLight2Helper.visible = true;
+spotLight3Helper.visible = true;
+spotLight4Helper.visible = true;
+
 spotLight1.position.set(halfWidth, 120, halfHeight);
 spotLight2.position.set(-halfWidth, 120, halfHeight);
 spotLight3.position.set(-halfWidth, 120, -halfHeight);
@@ -67,6 +76,11 @@ scene.add(spotLight1);
 scene.add(spotLight2);
 scene.add(spotLight3);
 scene.add(spotLight4);
+scene.add(spotLight1Helper);
+scene.add(spotLight2Helper);
+scene.add(spotLight3Helper);
+scene.add(spotLight4Helper);
+
 spotLight1.castShadow = true;
 spotLight2.castShadow = true;
 spotLight3.castShadow = true;
@@ -114,6 +128,14 @@ gui.add(options, 'intensity', 0, 100000);
 
 
 let step = 0;
+
+// Resizing
+window.addEventListener('resize', function()
+{
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+});
 
 function animate(time){
     step += options.speed;
